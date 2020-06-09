@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cvmaker-d006e": {
+      "hosting": {
+        "CVMaker": [
+          "cvmaker-d006e"
+        ]
+      }
+    }
+  }
+}
