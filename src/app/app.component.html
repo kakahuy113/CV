@@ -2,14 +2,14 @@
   <!-- Hero -->
   <section
     id="hero_section"
-    style="opacity: unset !important;"
+    style="opacity: unset !important;padding: 10px !important;"
     class="top_cont_outer"
   >
     <div class="hero_wrapper">
       <div class="container">
         <div class="hero_section">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <div class="top_left_cont intro zoomIn wow animated">
                 <h2>
                   I’m Huy<br />
@@ -26,35 +26,35 @@
                   <li
                     class="twitter shaked animated bounceIn wow delay-02s animated"
                   >
-                    <a href="javascript:void(0)" class="twitter"
-                      ><i class="fa fa-twitter"></i
+                    <a href="https://twitter.com/kakahuy113" target="_blank" title="twitter" class="twitter">
+                      <i class="fa fa-twitter"></i
                     ></a>
                   </li>
                   <li
                     class="facebook shaked animated bounceIn wow delay-03s animated"
                   >
-                    <a href="javascript:void(0)" class="facebook"
+                    <a href="https://www.facebook.com/giahuy.tran.735507" target="_blank" title="facebook" class="facebook"
                       ><i class="fa fa-facebook"></i
                     ></a>
                   </li>
                   <li
                     class="pinterest shaked animated bounceIn wow delay-04s animated"
                   >
-                    <a href="javascript:void(0)" class="instagram"
+                    <a href="https://www.instagram.com/tr.ghuy__/" target="_blank" title="instagram" class="instagram"
                       ><i class="fa fa-instagram"></i
                     ></a>
                   </li>
                   <li
                     class="gplus shaked animated bounceIn wow delay-05s animated"
                   >
-                    <a href="javascript:void(0)" class="google"
+                    <a href="mailto:kakahuy113@gmail.com" target="_blank" title="gmail" class="google"
                       ><i class="fa fa-google"></i
                     ></a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12 col-lg-6">
               <img
                 style="border-radius: 30%;"
                 alt=""
@@ -70,7 +70,7 @@
   <!-- End of hero -->
   <!-- Navbar -->
   <section
-    #header
+    
     style="
       padding: 0px !important;
       margin: 0 !important;
@@ -79,17 +79,17 @@
     id="header"
     [class.sticky]="sticky"
   >
-    <header>
+    <header #header>
      
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="javascript:void(0)">Home</a>
-      
+        <a class="navbar-brand" href="javascript:void(0)">TranGiaHuy</a>
+        <a href="../assets/Tran-Gia-Huy-TopCV.vn-140620.165255.pdf" download="">Dowload CV</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item current">
+          <ul class="navbar-nav mx-auto mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
               <a
               class="nav-link"
               href="javascript:void(0)"
@@ -170,7 +170,7 @@
         <p>I will update it soon...</p>
       </div>
       <div class="row animated bounceInUp wow">
-        <div class="col">
+        <div class="col-12 col-lg-12 col-xl-6">
           <div class="skill-wrapper">
             <h3><i class="far fa-hand-point-right"></i>Skills</h3>
             <p>
@@ -193,8 +193,20 @@
             </ul>
           </div>
         </div>
-        <div class="col">
-          <div class="barWrapper">
+        <div class="col-12 col-lg-12 col-xl-6">
+          <h3><i class="fas fa-tools"></i> Some technology that I'm using</h3>
+         <div class="content-skill">
+          <i class="devicon-vuejs-plain-wordmark colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+          <i class="devicon-nodejs-plain-wordmark colored"></i>
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-css3-plain-wordmark colored"></i>
+          <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          <i class="devicon-github-plain-wordmark colored"></i>
+          <i class="devicon-angularjs-plain colored"></i>
+          <i class="devicon-jquery-plain-wordmark colored"></i>
+         </div>
+          <!--  <div class="barWrapper">
             <span class="progressText"><B>HTML5</B></span>
             <div class="progress">
               <div
@@ -276,7 +288,8 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+
         </div>
       </div>
       <div></div>
@@ -317,6 +330,9 @@
   <!-- End of Project -->
   <!-- Contact -->
   <section id="contactopacity" #contact>
+    <div style="text-align: center;">
+      <h1>LEAVE ME A MESSAGE</h1>
+      <p>Please Fill Out The Form And I Will Reply You As Soon As Posible</p></div>
     <form [formGroup]="contactForm" class=" animated bounceInRight wow " (ngSubmit)="onSubmit()">
       <div class="background">
         <div class="container">
@@ -337,7 +353,7 @@
               <div class="screen-body-item left">
                 <div class="app-title">
                   <span>CONTACT</span>
-                  <span>US</span>
+                  <span>ME</span>
                 </div>
                 <div class="app-contact">CONTACT INFO : +84 96 665 354 0</div>
               </div>
@@ -390,7 +406,7 @@
                 <i class="fas fa-map-marker-alt"></i> My Address
               </h5>
               <p>2/14 Number 6 Road, Binh Hung Hoa ward, Binh Tan District</p>
-              <a class="btn" href="#." target="_blank">Register Now</a>
+              <!-- <a class="btn" href="#." target="_blank">Register Now</a> -->
             </div>
           </div>
 
@@ -463,7 +479,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p>TranGiaHuy © 2020. Design.</p>
+            <p>TranGiaHuy © 2020. Web Developer.</p>
           </div>
         </div>
       </div>

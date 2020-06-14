@@ -42,19 +42,19 @@ export class AppComponent implements OnInit {
   ) {
     this.wowService.init();
     this.contactForm = this.fb.group({
-      contactFormName: ["Tran Gia Huy", Validators.required],
+      contactFormName: ["", Validators.required],
       contactFormEmail: [
-        "abc@gmail.com",
+        "",
         Validators.compose([Validators.required, Validators.email]),
       ],
       contactFormNo: [
-        "0966653540",
+        "",
         Validators.compose([
           Validators.required,
           Validators.pattern("[0-9 ]{11}"),
         ]),
       ],
-      contactFormMessage: ["Some Message", Validators.required],
+      contactFormMessage: ["", Validators.required],
     });
   }
   ngOnInit() {}
